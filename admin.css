@@ -293,6 +293,11 @@ img {
     padding-bottom: 0;
 }
 
+.announcement h5 {
+    font-size: 1.1rem;
+    margin-bottom: 0.3rem;
+}
+
 .announcement p {
     font-size: 0.8rem;
     display: -webkit-box;
