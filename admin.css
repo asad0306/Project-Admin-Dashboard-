@@ -247,6 +247,7 @@ img {
 .projects .card-title {
     font-size: 1.2rem;
     margin-bottom: 0.2rem;
+    font-weight: 500;
 }
 
 .projects .card-text {
@@ -308,3 +309,56 @@ img {
     grid-area: trending;
 }
 
+.trending .card {
+    padding: 1.5rem;
+}
+
+.trend {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    cursor: pointer;
+}
+
+.trend + .trend {
+    margin-top: 1.5rem;
+}
+
+.trend .account1 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    font-size: 0.9rem;
+    gap: 5px;
+}
+
+.trend .username {
+    font-weight: 800;
+    margin-bottom: 0.15rem;
+}
+
+.trend-1 .gh-avatar2 img {
+    background: center center / cover no-repeat;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+  }
+  .trend-2 .gh-avatar3 img {
+    background: center center / cover no-repeat;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+  }
+  .trend-3 .gh-avatar4 img {
+    background: center center / cover no-repeat;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+  }
+  .trend-4 .gh-avatar5 img {
+    background: center center / cover no-repeat;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+  }
+  
