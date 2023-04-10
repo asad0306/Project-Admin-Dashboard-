@@ -8,6 +8,7 @@
     --side-width: clamp(210px, 22vw, 325px);
     --transition-speed: 1s;
     --transition-side: width0.4s ease-in ;
+    --transition-notSide: margin-left 0.4s ease-in;
 }
 
 body {
@@ -66,7 +67,7 @@ a {
 }
 
 .side > *:not(:first-child) > * {
-    padding: 1vw 0.1vw 0.1vw 0vw;
+    padding: 1rem 0.5rem 0.5rem 1rem;
     font-size: calc(20px + 0.2vw);
     padding-left: 20px;
 }
@@ -90,13 +91,13 @@ a {
     justify-content: flex-start;  
     width: calc(50px + 0.7vw);
     height: calc(50px + 0.7vw);
-    height: 50%;
     padding-left: 10px;
     padding-top: 10px;
 }
 
 .navbar {
     grid-area: nav;
+    transition: var(--transition-notSide);
     background-color: rgb(184, 241, 145);
     padding: 1.5rem 3rem;
     border-bottom: 2px solid khaki;
@@ -123,6 +124,7 @@ a {
     width: min(80%, 600px);
     border-radius: 10px;
     border: 0;
+    margin-left: 1.25rem;
     display: inline-block;
     outline-color: rgb(124, 98, 218);
     padding: 0.3rem 1.5rem;
@@ -137,6 +139,7 @@ a {
 .account {
     display: flex;
     align-items: center;
+    justify-content: flex-end;
     gap: 20px;
 }
 
@@ -204,6 +207,7 @@ img {
 
 .main-content {
     grid-area: content;
+    transition: var(--transition-notSide);
     background-color: grey;
     display: grid;
     padding: 2rem;
@@ -268,6 +272,7 @@ img {
     padding: 2rem;
     border-radius: 0.6rem;
     box-shadow: 0 10px 15px -3px;
+    max-width: 30vw;
 }
 
 .announcements {
